@@ -3,46 +3,164 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Проект EnglishYolee</title>
+  <title>Проект EnglishYolee — Учим английский вместе!</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f0f8ff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
+      color: #f0f0f0;
       margin: 0;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
-      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     h1 {
-      color: #2a7ae2;
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px #72a2f7;
     }
-    p {
-      font-size: 18px;
-      max-width: 600px;
-      margin: 20px auto;
+    p.lead {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 10px auto 30px;
+      line-height: 1.5;
+      color: #d3dce6;
     }
-    .btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 15px 30px;
-      background-color: #2a7ae2;
-      color: white;
+    .btn-primary {
+      background-color: #72a2f7;
+      color: #182848;
+      font-weight: bold;
+      padding: 15px 35px;
+      border-radius: 50px;
       text-decoration: none;
-      font-size: 20px;
-      border-radius: 8px;
+      font-size: 1.2rem;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      box-shadow: 0 0 15px #72a2f7aa;
+      margin-bottom: 40px;
+    }
+    .btn-primary:hover {
+      background-color: #4f7ad1;
+      color: white;
+      box-shadow: 0 0 25px #4f7ad1cc;
+    }
+    .features {
+      max-width: 900px;
+      margin: 0 auto 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      text-align: left;
+      color: #bcd1ff;
+    }
+    .feature-item {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px 25px;
+      box-shadow: 0 0 15px #1e2a53aa;
+      transition: background 0.3s ease;
+    }
+    .feature-item:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    .feature-item h3 {
+      margin-top: 0;
+      color: #d2e0ff;
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+      text-shadow: 0 0 6px #7fa1ffbb;
+    }
+    .payment {
+      background: #1a2a57;
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 0 20px #5176d9aa;
+      color: #c5d3f9;
+      text-align: left;
+    }
+    .payment h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #a0b9ff;
+      text-shadow: 0 0 10px #7a91ffcc;
+    }
+    .payment p {
+      margin: 8px 0;
+      font-size: 1.1rem;
+    }
+    .contact-btn {
+      display: block;
+      margin: 25px auto 0;
+      width: fit-content;
+      padding: 12px 25px;
+      background-color: #4169e1;
+      color: white;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 0 15px #4169e1cc;
       transition: background-color 0.3s ease;
     }
-    .btn:hover {
-      background-color: #185abd;
+    .contact-btn:hover {
+      background-color: #2e50b0;
+    }
+    footer {
+      margin-top: auto;
+      font-size: 0.9rem;
+      color: #7b8db9;
     }
   </style>
 </head>
 <body>
-  <h1>Добро пожаловать в проект EnglishYolee!</h1>
-  <p>Этот проект поможет тебе изучать английский язык легко и интересно через нашего телеграм-бота.<br>
-  Уроки, упражнения и поддержка — всё в одном месте.</p>
-  <a href="https://t.me/englishyolee_bot" class="btn" target="_blank" rel="noopener noreferrer">
+
+  <h1>🚀 Привет! Хочешь прокачать свой английский легко и интересно?</h1>
+  
+  <p class="lead">
+    Представляю проект <strong>EnglishYolee</strong> — телеграм-бот с уроками, заданиями и поддержкой.  
+    Здесь ты найдёшь много крутых фишек: вырезки на английском из популярных мультфильмов, фильмов и сериалов, вопросы по ним на английском, а также игру "мафия" на английском и многое другое!
+  </p>
+
+  <a href="https://t.me/englishyolee_bot" target="_blank" class="btn-primary" rel="noopener noreferrer">
     Перейти в бота EnglishYolee
   </a>
+
+  <section class="features">
+    <div class="feature-item">
+      <h3>🎬 Вырезки из мультфильмов и сериалов</h3>
+      <p>Смотри короткие видео на английском и отвечай на вопросы, чтобы понять и запомнить новые слова.</p>
+    </div>
+    <div class="feature-item">
+      <h3>❓ Вопросы и задания</h3>
+      <p>Практикуйся, отвечая на вопросы на английском, чтобы улучшать грамматику и словарный запас.</p>
+    </div>
+    <div class="feature-item">
+      <h3>🕵️‍♂️ Игра "Мафия" на английском</h3>
+      <p>Весело учи английский в интерактивной игре с другими пользователями.</p>
+    </div>
+    <div class="feature-item">
+      <h3>✨ И многое другое</h3>
+      <p>Разнообразные уроки, мини-игры и полезные советы, которые сделают обучение лёгким и интересным.</p>
+    </div>
+  </section>
+
+  <section class="payment">
+    <h2>Реквизиты для оплаты проходки:</h2>
+    <p>🏦 <strong>Моно:</strong> 4441 1144 3234 1210</p>
+    <p>🏦 <strong>Приват:</strong> 4149 4993 1042 1670</p>
+    <p>🪙 <strong>TON:</strong> UQDA9xn7xvkVwVmbMu0COwYH1MS7NTB8quUlWkAY4ES451uj</p>
+    <p>⚠️ Важно! В комментарии к оплате укажи свой Telegram (юзернейм или номер).</p>
+    <p>Если тебя не приняли в канал в течение 24 часов — нажми кнопку ниже и напиши <strong>@yolee01</strong>.</p>
+    <a href="https://t.me/yolee01" target="_blank" class="contact-btn" rel="noopener noreferrer">Связаться с @yolee01</a>
+  </section>
+
+  <footer>
+    © 2025 EnglishYolee — учим английский вместе!
+  </footer>
+
 </body>
 </html>
